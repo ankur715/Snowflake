@@ -2,8 +2,8 @@
 import snowflake.connector as sf
 
 user = "ANKUR715"
-password = "Ank241592."
-account = "kxunegy-gkb77032"
+password = ""
+account = ""
 warehouse = "COMPUTE_WH"
 database = "VIOLATIONS"
 schema = "NYC"
