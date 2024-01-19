@@ -47,6 +47,8 @@ LIST @VIOLATIONS.NYC.snow_stage;
 -- empty created table 
 select * from VIOLATIONS.NYC.NYC_Violations;
 
+//// Method 1: Copy statements in worksheet using snow_stage
+
 // copy table from S3 bucket
 copy into VIOLATIONS.NYC.NYC_Violations
 from @VIOLATIONS.NYC.snow_stage
@@ -59,6 +61,24 @@ select * from VIOLATIONS.NYC.NYC_Violations;
 -- delete records to reload using Python
 delete from VIOLATIONS.NYC.NYC_Violations;
 
--- loaded using Snowflake Connector for Python (main.py)
+//// Method 2: Snowflake Connector with Python
+
+-- loaded using Python (main.py)
+select * from VIOLATIONS.NYC.NYC_Violations;
+
+//// Method 3: Snow pipe in worksheet
+
+-- delete records to reload using pipe
+delete from VIOLATIONS.NYC.NYC_Violations;
+
+// pipe to automate data ingestion from s3  
+CREATE OR REPLACE PIPE VIOLATIONS.NYC.snow_pipe auto_ingest=TRUE AS
+    COPY INTO VIOLATIONS.NYC.NYC_Violations
+    FROM @VIOLATIONS.NYC.snow_stage
+    ON_ERROR = CONTINUE;
+
+SHOW PIPES;
+
+-- copied csv from backup to stage folder, triggering event (added in Properties)
 select * from VIOLATIONS.NYC.NYC_Violations;
 
