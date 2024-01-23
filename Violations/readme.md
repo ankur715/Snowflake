@@ -3,4 +3,4 @@
   - Store in AWS S3
   - Create database, schema, table in Snowflake
   - Copy data from S3 to Snowflake using Python
-  - Create pipe with S3 event trigger to Copy data to Snowflake
+  - Create pipe with S3 event trigger to automatically Copy data to Snowflake
