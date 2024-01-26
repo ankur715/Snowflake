@@ -4,3 +4,9 @@
   - Create database, schema, table in Snowflake
   - Copy data from S3 to Snowflake using Python
   - Create pipe with S3 event trigger to automatically Copy data to Snowflake
+
+- [NYC Violations JSON](https://github.com/ankur715/Snowflake/tree/main/Violations/NYC_json)
+  - Create database, schema, table in Snowflake
+  - Put data from local and copy using SnowSQL
+  - Query JSON format data
+  - Create structured table from semi-structured 
