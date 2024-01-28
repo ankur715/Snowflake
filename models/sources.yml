@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: nyc_vio
+      description: NYC Violations
+      database: violations
+      schema: nyc
+      tables:
+          - name: nyc_violations
+            description: One record per violation.
