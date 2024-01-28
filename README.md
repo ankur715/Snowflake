@@ -12,3 +12,8 @@
   - Snowflake Violations database
   - Integrated with GitHub repo and Snowflake
 <p><img src="https://github.com/ankur715/Snowflake/blob/main/pics/dbt_run.png"></p>
+
+- Fivetran
+  - Connector with Snowflake, DBT GitHub repo
+<p><img src="https://github.com/ankur715/Snowflake/blob/main/pics/Git_SF_DBT_fivetran_transformation.png"></p>
+ 
