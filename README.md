@@ -8,5 +8,4 @@
   - NYC_Json create, load
 
 - DBT
-  - Snowflake project linked with Snowflake analytics database
-  - Deploy transformations, unit testing
+  - Snowflake Violations database
