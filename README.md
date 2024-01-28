@@ -15,5 +15,4 @@
 
 - Fivetran
   - Connector with Snowflake, DBT GitHub repo
-<p><img src="https://github.com/ankur715/Snowflake/blob/main/pics/Git_SF_DBT_fivetran_transformation.png"></p>
- 
+<p><img src="https://github.com/ankur715/Snowflake/blob/main/Fivetran/Git_SF_DBT_fivetran_transformation.png"></p>
