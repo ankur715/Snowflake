@@ -11,4 +11,4 @@
 - DBT
   - Snowflake Violations database
   - Integrated with GitHub repo and Snowflake
-<p><img src="https://github.com/ankur715/Snowflake/blob/main/pics/dbt_run"></p>
+<p><img src="https://github.com/ankur715/Snowflake/blob/main/pics/dbt_run.png"></p>
